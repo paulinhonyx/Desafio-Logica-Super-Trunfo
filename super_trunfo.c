@@ -50,7 +50,7 @@ int main() {
     
     printf("Carta 1:\n\n");
     printf("Estado: %c\n", estado1);            
-    printf("Codigo: %c %d\n", estado1, codigo1);
+    printf("Codigo: %c%02d\n", estado1, codigo1);
     printf("Cidade: %s\n", cidade1);
     printf("Populacao: %d\n", populacao1);
     printf("Area: %.2f Km²\n", area1);
