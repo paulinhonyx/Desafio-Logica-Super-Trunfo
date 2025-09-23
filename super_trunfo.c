@@ -108,7 +108,7 @@ int main() {
     printf("Você escolheu o atributo %d\n", escolha);
 
     // Determinar o vencedor
-    printf("Comparacao das cartas (Atributo: Poder da carta):\n");
+    printf("Comparacao das cartas:\n");
     switch (escolha)
     {
     case 1:
