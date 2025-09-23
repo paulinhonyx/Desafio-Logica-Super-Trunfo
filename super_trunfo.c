@@ -3,17 +3,17 @@
 int main() {
     // Declaração das variáveis para a carta 1 e carta 2
     char estado1;
-    int codigo1;
+    char codigo1[2];
     char cidade1[30];
-    unsigned int populacao1;
+    int populacao1;
     float area1;
     float pib1;
     int pontos1;
 
     char estado2;
-    int codigo2;
+    char codigo2[2];
     char cidade2[30];
-    unsigned int populacao2;
+    int populacao2;
     float area2;
     float pib2;
     int pontos2;
@@ -93,8 +93,8 @@ int main() {
     printf("Poder da carta: %.2f\n\n", poder2);
 
     // Determinar o vencedor
-    printf("Comparação das cartas:\n");
-    if (populacao1 > populacao2) {
+    printf("Comparação das cartas (Atributo: Poder da carta):\n");
+    /* if (populacao1 > populacao2) {
         printf("População: Carta 1 ganhou (1)\n");
     } else {
         printf("População: Carta 2 ganhou (0)\n");
@@ -123,10 +123,14 @@ int main() {
         printf("PIB per capita: Carta 1 ganhou (1)\n");
     } else {
         printf("PIB per capita: Carta 2 ganhou (0)\n");
-    }
+    } */
     if (poder1 > poder2) {
+        printf("Poder da carta 1: %.2f\n\n", poder1);
+        printf("Poder da carta 2: %.2f\n\n", poder2);
         printf("Poder da carta: Carta 1 ganhou (1)\n");
     } else {
+        printf("Poder da carta 1: %.2f\n\n", poder1);
+        printf("Poder da carta 2: %.2f\n\n", poder2);
         printf("Poder da carta: Carta 2 ganhou (0)\n");
     }   
 
