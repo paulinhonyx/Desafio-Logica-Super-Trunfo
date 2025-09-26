@@ -117,40 +117,50 @@ int main() {
     case 2:
         if (populacao1 > populacao2) {
             printf("Populacao: Carta 1 ganhou (1)\n");
-        } else {
+        } else if (populacao1 < populacao2) {
             printf("Populacao: Carta 2 ganhou (0)\n");
+        } else {
+            printf("Populacao: Empate\n");
         }
         break;
     case 3:
         if (area1 > area2) {
             printf("Area: Carta 1 ganhou (1)\n");
-        } else {
+        } else if (area1 < area2) {
             printf("Area: Carta 2 ganhou (0)\n");
+        } else {
+            printf("Area: Empate\n");
         }
         break;
     case 4:
         if (pib1 > pib2) {
             printf("PIB: Carta 1 ganhou (1)\n");
-        } else {
+        } else if (pib1 < pib2) {
             printf("PIB: Carta 2 ganhou (0)\n");
+        } else {
+            printf("PIB: Empate\n");
         }
         break;
     case 5:
         if (pontos1 > pontos2) {
             printf("Pontos turisticos: Carta 1 ganhou (1)\n");
-        } else {
+        } else if (pontos1 < pontos2) {
             printf("Pontos turisticos: Carta 2 ganhou (0)\n");
+        } else {
+            printf("Pontos turisticos: Empate\n");
         }
         break;
     case 6:
         if (densidade1 < densidade2) {
             printf("Densidade populacional: Carta 1 ganhou (1)\n");
-        } else {
+        } else if (densidade1 > densidade2) {
             printf("Densidade populacional: Carta 2 ganhou (0)\n");
+        } else {
+            printf("Densidade populacional: Empate\n");
         }
         break; 
     default:
-        printf("Opção invalida.\n");
+        printf("Opcao invalida.\n");
         break;
     }
     /* 
